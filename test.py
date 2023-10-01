@@ -1,4 +1,4 @@
-import time
+"""Basic tests for open cart"""
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
@@ -7,6 +7,7 @@ from search_page import SearchPage
 
 
 def test() -> None:
+    """Тестирование домашней страницы"""
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
     home_page = HomePage(driver)
@@ -20,6 +21,7 @@ def test() -> None:
 
 
 def test_search_home_page() -> None:
+    """Тестирование основного поиска на странице поиска"""
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
     home_page = HomePage(driver)
@@ -33,6 +35,7 @@ def test_search_home_page() -> None:
 
 
 def test_search_page() -> None:
+    """Тестирование критерия поиска на странице поиска"""
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
     search_page = SearchPage(driver)

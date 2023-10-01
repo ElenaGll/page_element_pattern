@@ -1,3 +1,4 @@
+"""Page Object Model for Home Page"""
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from page_element import PageElement

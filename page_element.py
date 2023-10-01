@@ -1,3 +1,4 @@
+"""Page element implementation"""
 from typing import Tuple
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
