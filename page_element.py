@@ -4,7 +4,7 @@ from selenium.webdriver.remote.webelement import WebElement
 
 
 class PageElement:
-    """Класс для основных хкоманд"""
+    """Класс для основных команд"""
 
     def __init__(self, driver: WebDriver, locator: Tuple[str, str]):
         self.driver = driver
