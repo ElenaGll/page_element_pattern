@@ -30,3 +30,6 @@ jobs:
     - name: Pylint checking
       run: |
         pylint *.py
+    - name: Tests
+      run: |
+        pytest
